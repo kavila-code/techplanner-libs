@@ -1,0 +1,4 @@
+com\techplanner\pricingnative\bridge\PricingNativeLibrary.class
+com\techplanner\pricing\PricingNativeApplication.class
+com\techplanner\pricingnative\service\PricingNativeService.class
+com\techplanner\pricingnative\delivery\PricingNativeController.class

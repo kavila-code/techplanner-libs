@@ -1,0 +1,1 @@
+gcc -shared -fPIC -o libpricing.so pricing.c
