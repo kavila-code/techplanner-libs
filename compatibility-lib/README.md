@@ -89,6 +89,26 @@ Si prefieres Docker Compose para validación local:
 docker compose up --build
 ```
 
+## CI/CD
+
+El repositorio incluye un workflow de GitHub Actions en [.github/workflows/ci.yml](.github/workflows/ci.yml) que:
+
+- ejecuta `./mvnw clean verify` con Java 21;
+- publica el reporte JaCoCo como artefacto;
+- construye la imagen Docker para validar el empaquetado Linux.
+
+Esto deja una ruta reproducible para evaluación académica, verificación continua y despliegue en contenedores.
+
+## Estructura del proyecto
+
+La estructura base sigue una convención Java estándar:
+
+- `analyzers`, `calculators`, `models`, `enums`, `factory`, `utils`, `exceptions`: dominio y reglas de compatibilidad.
+- `cli`: punto de entrada ejecutable para validación del JAR.
+- `.mvn`, `mvnw`, `mvnw.cmd`: Maven Wrapper para builds reproducibles.
+- `Dockerfile` y `docker-compose.yml`: empaquetado y smoke validation en Linux.
+- `.github/workflows`: automatización de CI/CD.
+
 ## AWS
 
 Estructura recomendada para despliegue:
