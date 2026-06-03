@@ -1,0 +1,9 @@
+services:
+  compatibility-lib:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: compatibility-lib:latest
+    container_name: compatibility-lib-smoke
+    environment:
+      JAVA_TOOL_OPTIONS: "-XX:MaxRAMPercentage=75"
