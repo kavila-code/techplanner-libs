@@ -1,0 +1,5 @@
+service:
+  princing-native-lib-spring-app:
+    image: pricing-native:latest
+    ports:
+      - "8080:8080"

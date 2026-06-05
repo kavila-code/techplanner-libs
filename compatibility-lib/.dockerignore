@@ -1,0 +1,14 @@
+target/
+.git/
+.idea/
+.vscode/
+*.iml
+*.log
+*.tmp
+*.swp
+**/surefire-reports/
+**/failsafe-reports/
+**/test-classes/
+**/generated-sources/
+**/generated-test-sources/
+**/site/
